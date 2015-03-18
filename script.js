@@ -44,7 +44,7 @@ function unregister() {
         password: uaPass.value,
         traceSip: true,
         displayName: uaName.value,
-        stunServers': ["stun:null"],
+        stunServers: ["stun:null"],
 
     };
 
