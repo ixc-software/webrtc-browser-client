@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MegaPhone</title>
+</head>
+<body>
+<audio id="remote"></audio>
+<audio id="local" muted="muted"></audio>
+<div id="ua-status">Статус телефона</div>
+
+<input type="text" name="ip" id="ip" placeholder="IP address" value="208.52.161.106">
+<input type="text" name="ip" id="port" placeholder="Port" value="8082">
+<input type="text" name="user" id="user" placeholder="Username" value="1000">
+<input type="text" name="pass" id="pass" placeholder="Password" value="1234">
+<input type="text" name="name" id="name" placeholder="DisplayName" value="webrtc@cfc.io">
+<br>
+<button onclick="register()" id="reg">register</button>
+<button onclick="unregister()" id="unreg" style="display: none;">unregister</button>
+
+<br>
+<br>
+<br>
+
+<input type="text" name="to" id="to" placeholder="To" value="mac@cfc.io">
+	<button onclick="call()" class="call-button">Call</button>
+	<button id="end" onclick="endCall()" class="end-call-button" style="display: none;">End call</button>
+
+
+<script src="sip-0.6.4.min.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
