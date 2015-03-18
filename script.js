@@ -141,5 +141,5 @@ function endCall(question, bye) {
 }
 
 function createSession(question) {
-    return ua.invite('sip:' + question, options);  //Здесь 5.45.119.118 - это айпи SIP софтсвича
+    return ua.invite('sip:' + question, options);  
 }
